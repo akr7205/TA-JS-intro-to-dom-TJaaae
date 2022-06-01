@@ -1,7 +1,7 @@
 // 1. Change the title of the page to `Hello AltCampus!`
 document.title = 'Hello AltCampus';
 // 2. Select the element using the children property:
-
+   
 //    - Select the `h1` element and change the value to `Learning DOM`
 let h1 = document.body.children[0];
 h1.innerText = 'Learning DOM';
@@ -9,7 +9,7 @@ h1.innerText = 'Learning DOM';
 let liDoc = document.body.children[5].children[0];
 liDoc.innerText = 'all about document';
 //    - Select the input element with name `email`
-let email = document.body.children[6].children[1];
+let email = document.body.children[6].children[2];
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
 console.log(document.querySelectorAll('li').length);
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
@@ -42,7 +42,7 @@ console.log(`The total number of img elements is ${document.querySelectorAll('im
 // 16. Select all the `p` element and store in `allPElement`
 let allPElements=document.querySelectorAll('p');
 // 17. Select all the buttons and log the count of buttons.
-let buttons=document.querySelectorAll('input[type="submit"].length');
+let buttons=document.querySelectorAll('buttons');
 // 18. Select all the `label` element and log the count.
 let Alllabel=document.querySelectorAll('label');
 console.log(Alllabel.length);
