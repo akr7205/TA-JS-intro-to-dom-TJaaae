@@ -121,11 +121,11 @@ box6.classList.toggle('awesome-box');
 // Using the remove classList proeprty remove the class `awesome-box` from box 4
 box4.classList.remove('awesome-box');
 // Change the background of the body to bisque
-document.querySelector('body').style.background='bisque';
+document.body.style.background='bisque';
 // Create a button and store it in a variable named 'btn'
 let btn=document.createElement('button');
 // textContent of the button should be 'Click Me'
-btn.innerText='Click Me';
+btn.textContent='Click Me';
 // Change the background of the btn to 'oldlace'
 btn.style.background='oldlace';
 // Change the font size of the btn to 1rem
