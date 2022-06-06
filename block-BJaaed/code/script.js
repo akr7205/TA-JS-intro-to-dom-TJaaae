@@ -141,7 +141,7 @@ container.append(cardContainer);
 cardContainer.classList.add('card-container','flex','justify-between','item-center','wrap','flex-column');
   booksData.books.forEach(book =>{
     let card = document.createElement('div');
-    card.classList.add('card','flex-30');
+    card.classList.add('card');
     let imgDiv = document.createElement('div');
     imgDiv.classList.add('img','flex','center');
     let img = document.createElement('img');
@@ -153,7 +153,10 @@ cardContainer.classList.add('card-container','flex','justify-between','item-cent
     let h2= document.createElement('h2');
     h2.innerText=book.title;
     let p= document.createElement('p');
-    p.innerText=book.author;
+    let span= document.createElement('span');
+    span.innerText=book.author
+    p.innerText='Author:';
+    p.append(span);
     let a=document.createElement('a');
     a.classList.add('btn');
     a.innerText='Buy Now';
