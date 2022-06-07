@@ -141,7 +141,7 @@ container.append(cardContainer);
 cardContainer.classList.add('card-container','flex','justify-between','item-center','wrap','flex-column');
   booksData.books.forEach(book =>{
     let card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('card','flex-30');
     let imgDiv = document.createElement('div');
     imgDiv.classList.add('img','flex','center');
     let img = document.createElement('img');
